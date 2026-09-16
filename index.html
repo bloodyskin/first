@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Динара Мырзамурат — Страховой консультант</title>
+<meta name="description" content="Консультации по страхованию жизни, финансовой грамотности и накоплению капитала">
+<style>
+  :root {
+    --bg: #f7f5f1;
+    --card: #ffffff;
+    --ink: #1f2a24;
+    --muted: #6b7570;
+    --accent: #1f3d34;
+    --accent-2: #c9a96a;
+    --whatsapp: #25d366;
+    --line: #e7e3da;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+
+  .card {
+    width: 100%;
+    max-width: 420px;
+    padding: 48px 24px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 24px rgba(31, 61, 52, 0.18);
+    overflow: hidden;
+  }
+
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transform: scale(2.55);
+    transform-origin: 52% 2%;
+  }
+
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 4px;
+    letter-spacing: -0.01em;
+  }
+
+  .role {
+    font-size: 15px;
+    color: var(--accent);
+    font-weight: 500;
+    margin: 0 0 20px;
+  }
+
+  .bio {
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--muted);
+    margin: 0 0 28px;
+    max-width: 340px;
+  }
+
+  .topics {
+    width: 100%;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 18px 20px;
+    margin-bottom: 28px;
+    text-align: left;
+  }
+
+  .topics h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    font-weight: 600;
+    margin: 0 0 12px;
+  }
+
+  .topics ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .topics li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14.5px;
+    line-height: 1.4;
+    color: var(--ink);
+    padding: 7px 0;
+  }
+
+  .topics li:not(:last-child) {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .topics li::before {
+    content: "";
+    flex-shrink: 0;
+    width: 6px;
+    height: 6px;
+    margin-top: 6px;
+    border-radius: 50%;
+    background: var(--accent-2);
+  }
+
+  .actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .btn:active {
+    transform: scale(0.97);
+    opacity: 0.9;
+  }
+
+  .btn svg { flex-shrink: 0; }
+
+  .btn-primary {
+    background: var(--whatsapp);
+    color: #ffffff;
+  }
+
+  .btn-secondary {
+    background: var(--card);
+    color: var(--ink);
+    border: 1px solid var(--line);
+  }
+
+  .footer {
+    font-size: 12.5px;
+    color: var(--muted);
+    margin-top: auto;
+  }
+
+  @media (min-width: 480px) {
+    .card { padding-top: 64px; }
+  }
+</style>
+</head>
+<body>
+  <main class="card">
+    <div class="avatar"><img src="circleimage.jpg" alt="Динара Мырзамурат"></div>
+    <h1>Динара Мырзамурат</h1>
+    <p class="role">Консультант по страхованию жизни</p>
+    <p class="bio">
+      Помогаю разобраться в страховании жизни и финансовой грамотности —
+      чтобы через несколько лет у вас был капитал, а не сожаления.
+    </p>
+
+    <div class="topics">
+      <h2>О чём консультация</h2>
+      <ul>
+        <li>Зачем нужно страхование жизни</li>
+        <li>Основы финансовой грамотности</li>
+        <li>Как накопить капитал за несколько лет</li>
+        <li>Защита семьи и будущего</li>
+      </ul>
+    </div>
+
+    <div class="actions">
+      <a class="btn btn-primary" href="https://wa.me/77717000088" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.79 14.09c-.24.68-1.4 1.3-1.94 1.38-.5.08-1.12.11-1.81-.11-.42-.13-.95-.31-1.64-.6-2.89-1.25-4.78-4.15-4.92-4.34-.14-.19-1.17-1.56-1.17-2.97 0-1.41.74-2.1 1-2.39.26-.29.57-.36.76-.36h.55c.18 0 .42-.03.65.5.24.55.83 1.9.9 2.04.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.13-.28.28-.12.55.16.28.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.68-.79.86-1.06.18-.28.35-.23.6-.14.24.09 1.55.73 1.82.86.26.14.44.2.5.31.07.12.07.68-.17 1.35z"/>
+        </svg>
+        Написать в WhatsApp
+      </a>
+      <a class="btn btn-secondary" href="https://www.instagram.com/dinara.myrzamurat/" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+        Instagram
+      </a>
+    </div>
+
+    <p class="footer">Динара Мырзамурат · Страховой консультант</p>
+  </main>
+</body>
+</html>
